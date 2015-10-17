@@ -1,1 +1,1 @@
-angular.module('IHateAngularApp', []);
+angular.module('IHateAngularApp', ['ngResource']);

@@ -1,7 +1,7 @@
 var seeder = require('mongoose-seed');
 
 // Connect to MongoDB via Mongoose 
-seeder.connect('mongodb://localhost:27017/', function() {
+seeder.connect('mongodb://localhost:27017/angular-sucks', function() {
   // Load Mongoose models 
   seeder.loadModels(['./models/Post.js']);
   // Clear specified collections 
