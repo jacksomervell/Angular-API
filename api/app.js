@@ -7,7 +7,12 @@ var app = express();
 
 var mongoose = require('mongoose');
 
+
 var routes = require('./config/routes');
+
+
+
+app.use(cors())
 
 app.use(logger('dev'));
 app.use(bodyParser.json());
