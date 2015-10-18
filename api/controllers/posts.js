@@ -17,7 +17,19 @@ function getAll(request, response) {
   }).select('-__v');
 }
 
+// POST
+function createPost(request, response) {
+  var character = new Post(request.body);
+
+  post.save(function(error) {
+    if(error) response.status(500).send(error);
+
+    response.status(201).send(post);
+  });
+}
+
 module.exports = {
-  getAll: getAll
+  getAll: getAll,
+  createPost: createPost
 
 }
