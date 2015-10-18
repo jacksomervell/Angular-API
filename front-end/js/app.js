@@ -1,1 +1,1 @@
-angular.module('IHateAngularApp', ['ngResource']);
+angular.module('IHateAngularApp', ['ngResource', 'underscore']);
